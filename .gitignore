@@ -1,0 +1,5 @@
+mycompany/mycompany/__pycache__/
+mycompany/orion/__pycache__/
+mycompany/orion/migrations/__pycache__/
+.vscode/cd
+*.sqlite3

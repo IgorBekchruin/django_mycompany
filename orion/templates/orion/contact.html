@@ -1,0 +1,50 @@
+{% extends 'orion/base.html' %}
+
+{% block title %}ООО Орион | Контакты{% endblock title %}
+
+{% block content %}
+
+<footer id="contact">
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="titlepage">
+                  <h2>Свяжитесь с нами</h2>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <form id="request" class="main_form" method='post' action='{% url "contact" %}'>
+                  {% csrf_token %}
+                  <div class="row">
+                     <form id="request" class="main_form" method='post', action=''>
+                 {{ form.non_field_errors }}
+                 <div class="col-md-4 ">
+                    {{ form.name.errors }}
+                     {{ form.name }}        
+                 </div>
+                 <div class="col-md-4 ">
+                    {{ form.email.errors }}
+                     {{ form.email }}        
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <ul class="social_icon">
+                       <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                 </div>
+                     <div class="col-md-8 ">
+                        {{ form.message.errors }}
+                         {{ form.message }}        
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <button class="send_btn">Отправить</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+{% endblock content %}

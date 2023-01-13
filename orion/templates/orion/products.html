@@ -1,0 +1,47 @@
+{% extends 'orion/base.html' %}
+{% load static %}
+
+{% block title %}ООО Орион | Продукция{% endblock title %}
+
+{% block content %}
+<div class="product">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <div class="titlepage">
+               <h2>Наша продукция</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 padding_left0">
+            <div class="product_box">
+               <figure><img src="{% static 'images/fanera.jpg' %}" alt="#"/></figure>
+               <h3>фанера</h3>
+            </div>
+         </div>
+         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 padding_right0">
+            <div class="product_box">
+               <figure><img src="{% static 'images/bricket.jpg' %}" alt="#"/></figure>
+               <h3>брикеты</h3>
+            </div>
+         </div>
+         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 padding_left0">
+            <div class="product_box">
+               <figure><img src="{% static 'images/gkd.jpg' %}" alt="#"/></figure>
+               <h3>ГКД</h3>
+            </div>
+         </div>
+         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 padding_right0">
+            <div class="product_box">
+               <figure><img src="{% static 'images/doski.jpg' %}" alt="#"/></figure>
+               <h3>доски</h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock content %}
+
