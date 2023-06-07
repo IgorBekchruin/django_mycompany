@@ -6,4 +6,3 @@ orion/__pycache__/
 .idea/
 .vscode/cd
 *.sqlite3
-.env.dev
