@@ -7,3 +7,4 @@ orion/__pycache__/
 .vscode/cd
 *.sqlite3
 /.env.dev
+venv/

@@ -1,8 +1,7 @@
 from django import forms
-from .models import Message
 
 
-class MessageForm(forms.ModelForm):
+class MessageForm(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={'class': "contactus",
                                                         'placeholder': "Ваше имя",
                                                         'type': "type",
@@ -17,5 +16,4 @@ class MessageForm(forms.ModelForm):
                                                            'Message': "Name"}))
 
     class Meta:
-        model = Message
         fields = ('name', 'email', 'message')
