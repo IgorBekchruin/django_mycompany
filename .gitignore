@@ -3,3 +3,6 @@ mycompany/orion/__pycache__/
 mycompany/orion/migrations/__pycache__/
 .vscode/cd
 *.sqlite3
+venv/
+*.env
+.idea/
